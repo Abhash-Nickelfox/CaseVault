@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "plugins": ["react", "react-hooks", "jsx-a11y"],
+  "categories": {
+    "correctness": "error"
+  },
+  "ignorePatterns": ["dist", "node_modules"]
+}
