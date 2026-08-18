@@ -5,13 +5,13 @@ const CHALLENGES = [
     title: 'No Controlled User Registration',
     severity: 'critical',
     description:
-      'Open self-registration on an investigations platform would create unauthorized access to sensitive case data. There was no mechanism to restrict who could enter and see active case records.',
+      'Open self-registration left access to the investigation platform insufficiently controlled. Without an administrator-led registration process, there was no structured way to determine who could enter the platform.',
   },
   {
-    title: 'No Role-Based Access Control',
+    title: 'Uncontrolled Case Access',
     severity: 'critical',
     description:
-      'Without role-based restrictions, all users would have equal access to every case and module, including sensitive cases managed exclusively by senior investigators.',
+      'Without role-based controls, users could access the same cases and modules, including sensitive investigations managed by senior investigators. This made it difficult to restrict sensitive information based on individual roles and responsibilities.',
   },
   {
     title: 'Manual Entity Analysis',
@@ -64,13 +64,13 @@ export default function Problem() {
           Industry Challenges
         </p>
         <h2 className="font-display-lg text-display-lg text-on-surface max-w-3xl">
-          Problems worth solving
+          Problems Behind the Process
         </h2>
         <p className="mt-stack-md font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
-          Law enforcement investigators had no structured digital platform for managing
-          investigations. Case creation was inconsistent, evidence sharing happened via email,
-          entity analysis required exhausting manual review across large document volumes, and
-          there was no role-based access control governing who could see sensitive case data.
+          Law enforcement investigations relied on fragmented and manual workflows. Case creation
+          lacked consistency, evidence was shared through disconnected channels, analyzing large
+          volumes of case data required extensive manual effort, and sensitive information lacked
+          structured role-based access.
         </p>
 
         <div className="mt-stack-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
