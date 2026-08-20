@@ -3,20 +3,20 @@ import ctaBackground from '../../assets/cta-background.jpg'
 
 export default function Cta() {
   return (
-    <section className="relative py-[100px] border-b border-outline-variant/20">
+    <section className="relative min-h-[500px] flex items-center py-[100px] border-b border-outline-variant/20">
       <div
-        className="absolute inset-0 w-full h-full bg-cover bg-center opacity-30"
+        className="absolute inset-0 w-full h-full bg-cover bg-center opacity-60"
         style={{ backgroundImage: `url(${ctaBackground})` }}
         role="img"
         aria-label="A secure, cinematic intelligence workspace backdrop."
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/30 to-transparent" />
 
       <div className="relative z-10 max-w-4xl mx-auto text-center px-container-padding space-y-stack-md">
         <h2 className="font-display-lg text-display-lg text-on-surface">
           Ready to secure your intelligence?
         </h2>
-        <p className="font-body-lg text-body-lg text-on-surface-variant">
+        <p className="font-body-lg text-body-lg text-black">
           Deploy CaseVault in your environment and bring structure to your investigations.
         </p>
         <div className="pt-stack-sm">

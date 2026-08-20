@@ -4,37 +4,37 @@ const STEPS = [
   {
     title: 'Platform Architecture & Design',
     description:
-      'Figma designs scoped across Admin, Senior Investigator, and Investigator portals. Role-specific dashboards and 7 module flows designed before development begins, with scope frozen at design sign-off.',
+      'Figma designs define the Admin, Senior Investigator, and Investigator portals, with role-specific dashboards and 7 core module flows mapped end-to-end. The complete platform structure, user journeys, and interaction patterns are finalized and scope-frozen before development begins.',
   },
   {
     title: 'Authentication & Role Management',
     description:
-      'Admin-controlled user registration built with employee ID and role assignment. System generates unique credentials; admin delivers offline. Role-based access control restricts module visibility by assigned role.',
+      'Admin-controlled registration using employee ID and role assignment, with unique credentials generated for each user. 3-tier RBAC ensures role-specific access, restricting module visibility and permissions based on assigned roles.',
   },
   {
     title: 'Onboarding & Role Dashboards',
     description:
-      'First-login guided tour tailored per role. Post-login dashboard surfaces only modules relevant to the authenticated user: Admin sees user management, Senior Investigator sees case and investigator tools, Investigator sees cases, notifications, and reports.',
+      'Role-specific first-login guidance helps users quickly understand their workspace. Dashboards dynamically surface relevant modules and actions—Admin manages users, Senior Investigator manages cases and investigators, while Investigator accesses cases, notifications, and reports.',
   },
   {
     title: 'Case Management Module',
     description:
-      'Template-driven case creation (Theft, Kidnapping, and other crime types) with extensible custom fields. Case updates allow investigators to record progress and findings at any time. Shared cases enforce read-only access for receiving investigators.',
+      'Template-driven case creation supports Theft, Kidnapping, and other crime types, with extensible custom fields for evolving requirements. Investigators can continuously update case progress and findings, while shared cases enforce read-only access for receiving investigators.',
   },
   {
     title: 'Data Ingestion & LLM Pipeline',
     description:
-      'Six-format file upload (PDF, DOC, images, audio, video, OCR & CDR) with LLM-driven validation and categorization. Data cleaning tools handle deduplication and metadata tagging, keeping evidence stored in a unified, queryable repository.',
+      'Multi-format evidence ingestion across PDF, DOC, images, audio, video, OCR, and CDR with LLM-powered validation and categorization. Deduplication, data cleaning, and metadata tagging organize evidence into a unified, structured, and queryable repository for investigation.',
   },
   {
     title: 'Entity Extraction & Neo4j Graph',
     description:
-      'Pre-trained LLM processes case files and identifies entities and relationships, passing structured data to Neo4j for interactive graph visualization. Audio/video transcription, text summarization, image object detection, and prompt refinement also delivered.',
+      'Pre-trained LLMs analyze case files to extract entities and relationships, transforming structured data into interactive Neo4j graphs. The pipeline also supports audio/video transcription, text summarization, image object detection, and prompt refinement for deeper investigative intelligence.',
   },
   {
     title: 'Collaboration, Notifications & Audit',
     description:
-      'In-case collaboration enables comment, edit, and data addition on owned cases. Shared cases remain view-only. Real-time web notifications alert all stakeholders on case changes. All changes synced and logged with full access records for compliance.',
+      'In-case collaboration enables comments, edits, and data additions on owned cases, while shared cases remain view-only. Real-time notifications keep stakeholders informed of case updates, with every change synchronized and recorded through complete access and activity logs for compliance.',
   },
 ]
 
@@ -50,10 +50,11 @@ export default function Solution() {
         </p>
         <h2 className="font-display-lg text-display-lg text-on-surface">Solution Architecture</h2>
         <p className="mt-stack-md font-body-lg text-body-lg text-on-surface-variant">
-          An AI-powered investigations and case management platform with 3-tier RBAC (Admin,
-          Senior Investigator, Investigator), template-driven case creation, multi-format file
-          upload across 6 evidence types, LLM entity extraction, Neo4j relationship graph
-          visualization, and in-platform collaboration with full audit logs.
+          CaseVault connects the complete investigation lifecycle, from secure onboarding and
+          template-driven case creation to multi-format evidence ingestion and AI-powered entity
+          extraction. With 3-tier RBAC (Admin, Senior Investigator, Investigator), Neo4j
+          relationship graphs, in-platform collaboration, and complete audit logs, investigators
+          turn fragmented evidence into actionable intelligence.
         </p>
         <p className="mt-stack-sm font-body-md text-body-md text-on-surface-variant/80">
           The complete user journey from onboarding to actionable intelligence.

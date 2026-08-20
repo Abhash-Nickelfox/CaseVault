@@ -23,19 +23,19 @@ const CHALLENGES = [
     title: 'Inconsistent Case Creation',
     severity: 'high',
     description:
-      'Creating cases from scratch for every investigation produced inconsistent data capture across investigators. No two cases for the same crime type shared the same structure.',
+      'Creating cases from scratch led to inconsistent data capture across investigators. Without a standardized structure, cases of the same type could differ significantly, making investigation data harder to organize, compare, and manage consistently.',
   },
   {
-    title: 'No Structured Evidence Handling',
+    title: 'Unstructured Evidence Handling',
     severity: 'high',
     description:
-      'Evidence was shared via physical handoff or email with no centralized ingestion, no validation, and no deduplication, so investigators had no unified repository for case materials.',
+      'Evidence shared through physical handoffs or email lacked centralized ingestion, validation, and deduplication. This made it difficult for investigators to maintain a consistent, unified repository of case materials and manage evidence efficiently.',
   },
   {
-    title: 'No Collaboration Governance',
+    title: 'Uncontrolled Case Collaboration',
     severity: 'medium',
     description:
-      'Informal case sharing via email or verbal communication left no audit trail and no read-only enforcement, so multiple investigators could modify the same case record simultaneously, creating conflicts.',
+      'Informal case sharing through email or verbal communication provided no audit trail or read-only controls. Multiple investigators could modify the same case record, increasing the risk of conflicting changes and unauthorized modifications.',
   },
 ]
 
